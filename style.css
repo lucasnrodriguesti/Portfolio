@@ -57,9 +57,9 @@ body {
     font-size: 24px;
 }
 
-.aprensetacao__links__link {
+.apresentacao__links__link {
     border: 2px solid #490871;
-    /* width: 378px; */
+    width: 378px;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
