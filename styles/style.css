@@ -5,11 +5,22 @@
     padding: 0;
 }
 
+:root {
+    --cor--background: #0f0f0f;
+    --cor-texto: #FFFFFF;
+    --cor-destaque: #FFA100;
+    --cor-sobre-mim: #EFECEC;
+    --cor-borda-link: #490871;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Roboto', sans-serif;
+    --fonte-secundaria: 'Mavin Pro', sans-serif;
+}
+
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     height: 100%;
-    background-color: black;
+    background-color: var(--cor--background);
 }
 
 .cabecalho {
@@ -22,14 +33,14 @@ body {
 }
 
 .cabecalho__menu__link {
-    color: #FFFFFF;
+    color: var(--cor-texto);
     font-family: 'Mavin Pro', sans-serif;
     font-size: 24px;
     text-decoration: none;
 }
 
 .cabecalho__menu__link:hover {
-    color: #FFA100;
+    color: var(--cor-destaque);
 }
 
 .apresentacao {
@@ -47,19 +58,19 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    color: #EFECEC;
-    font-family: 'Roboto', sans-serif;
+    color: var(--cor-sobre-mim);
+    font-family: var(--fonte-primaria);
     font-weight: 400px;
     font-size: 36px;
 }
 
 .apresentacao__conteudo__destaque {
-    color: #FFA100;
+    color: var(--cor-destaque);
 }
 
 .apresentacao__conteudo__sobre-min {
-    color: #EFECEC;
-    font-family: 'Maven Pro', sans-serif;
+    color: var(--cor-sobre-mim);
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
 }
 
@@ -73,7 +84,7 @@ body {
 
 .apresentacao__links__subtitulo {
     font-family: 'Maven Pro', sans-serif;
-    color: #FFFFFF;
+    color: var(--cor-texto);
     font-size: 24px;
 }
 
@@ -81,7 +92,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #490871;
+    border: 2px solid var(--cor-borda-link);
     width: 378px;
     border-radius: 8px;
     font-size: 24px;
@@ -89,20 +100,20 @@ body {
     margin: 10px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Maven Pro', serif;
+    color: var(--cor-texto);
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .rodape {
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: 24px;
     font-weight: 400;
     text-align: center;
-    background-color: #FFA100;
+    background-color: var(--cor-destaque);
     padding: 24px;
 }
